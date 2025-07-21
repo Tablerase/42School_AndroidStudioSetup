@@ -91,6 +91,10 @@ init() {
 
 save() {
 	echo "======= Saving Android Studio files into $storage... ======="
+	if [ $usage == $storage ]; then
+		echo "Skipping copy since usage and storage at: $usage"
+		exit 1
+	fi
 	for folder in "${folders[@]}"; do
 		cp -r $HOME/$usage/$folder $HOME/$storage/$folder
 		if [ $? -eq 0 ]; then
