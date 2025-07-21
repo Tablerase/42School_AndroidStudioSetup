@@ -19,7 +19,7 @@ If you use a temporary directory. You should `--save` before logging out.
    ```bash
    cd 42School_AndroidStudioSetup
    ```
-   > [!IMPORTANT]\
+> [!IMPORTANT]\
    > 3. **Modify the `setup_android.sh` script to suit your needs**:
    ```bash
    nano setup_android.sh
@@ -46,17 +46,17 @@ If you use a temporary directory. You should `--save` before logging out.
    - After modifying, save the file:
      - If using `nano`, press `CTRL + O`, then `Enter` to save, and `CTRL + X` to exit.
      - If using another editor, follow the appropriate save and exit commands for that editor.
-3. Make the script executable:
+4. Make the script executable:
    ```bash
    chmod +x setup_android.sh
    ```
-4. Run the script to set up Android Studio:
+5. Run the script to set up Android Studio:
    ```bash
    ./setup_android.sh --init
    ```
-5. After **running the script, you can start Android Studio.**
+6. After **running the script, you can start Android Studio.**
    - You can then follow the Android Studio setup wizard to configure it for your needs.
-6. If you need to save your Android Studio files for later use, run:
+7. If you need to save your Android Studio files for later use, run:
    ```bash
    ./setup_android.sh --save
    ```
